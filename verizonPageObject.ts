@@ -10,8 +10,18 @@ export class kimsPageObject extends BasePage {
     whyVerizonButton: By = By.xpath('//button[@id="gnav20-Why-Verizon-L1"]');
     chooseNetwork: By = By.xpath('//a[@id="gnav20-Why-Verizon-L2-1"]');
     coverageMap: By = By.xpath('//a[@id="gnav20-Why-Verizon-L3-2"]');
+
+
+    //searchAddress: By = By.xpath('//div[@id="root_search_container"]');
+    //searchAddress: By = By.xpath('//div[@class="searchV2__search_container__xfudD"]');
     //searchAddress: By = By.xpath('//input[@class="searchV2__search_input__11y2w"]');
-    searchAddress: By = By.xpath('//input[@id="search_input"]');
+    //searchAddress: By = By.xpath('//input[@id="search_input"]');
+    //searchAddress: By = By.xpath('//form[@id="search_input"]');
+    searchAddress: By = By.xpath('//input[@*]');
+    
+    
+
+
     chooseMobile: By = By.css("#gnav20-eyebrow-link-Personal");
     selectPhones: By = By.css('#gnav20-Mobile-L2-2');
     phoneAd: By = By.css(".Col.hero-tile-wrap-content.u-paddingTop--xs24.u-paddingTop--lg48.u-paddingX--xs16.u-paddingX--sm24.u-paddingX--lg24.u-textCenter");
@@ -72,6 +82,7 @@ export class kimsPageObject extends BasePage {
     buildYourOwnPlan: By = By.xpath('//div[@id="inner-buildyourown"]');
     //continueAfterUnlimitedOption: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"]')[1];
     continueButton: By = By.xpath('//button[@id="continue_button"]');
+    continueButtonForOnePhone: By = By.xpath('//span[text()="Shop phones"]');
     perkContinueButton: By = By.xpath('//button[@id="perk_continue"]');
     popUpCloseButton: By = By.xpath('//span[@class="lp_close-icon lp_icon-dark"]')[1];
     //chooseDisneyBundle: By = By.xpath('//span[@class="sc-tagGq gILsHN"]')[0];
@@ -137,6 +148,63 @@ export class kimsPageObject extends BasePage {
     coverageMapText: By = By.xpath('//h1[@class="u-text--xs36 u-textLineHeightTight u-text--lg48 u-marginBottom--xs32 u-marginBottom--md64"]');
     appleIphone14PlusText: By = By.xpath('//span[text()="Apple iPhone 14 Plus"]');
     continueBtnForBuyNow: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 dCkSrl"][2]');
+    mapaDelSitio: By = By.xpath('//a[text()=" Mapa del sitio "]');
+    mapaDelSitioText: By = By.xpath('//h1[text()="Mapa del sitio."]');
+    //pickAPlan: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"][1]');
+    //pickAPlan: By = By.xpath('//button[@id="handle-pickaplan-button"][0]');
+    pickAPlanForLine2: By = By.xpath('//button[@id="handle-pickaplan-button"]');
+
+
+    //buildOrderShopPhones: By = By.xpath('//button[@id="handle-shopphones-button"][1]');
+    //buildOrderShopPhones: By = By.xpath('//button[@id="handle-shopphones-button"][2]');
+    //buildOrderShopPhones: By = By.xpath('//button[@id="handle-shopphones-button"][0]');
+    //buildOrderShopPhones: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"]')[1];
+    //buildOrderShopPhones: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 fkFKdk"][1]');
+    //buildOrderShopPhones: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 fkFKdk"][0]');
+    buildOrderShopPhones: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 fkFKdk"][2]');
+    //buildOrderShopPHones: By = By.xpath('//span[text()="Shop phones"]');
+
+
+    googlePixelFold: By = By.xpath('//div[@id="productDetails"][1]');
+    //preOrdergooglePixelFold: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 glVjuF w-full"]');
+    preOrdergooglePixelFold: By = By.xpath('//div[@class="ContinueComponent__Wrapper-sc-26ypzp-0 qZMDL grid grid-cols-1 sm:grid-cols-2  gap-4"]');
+    //preOrdergooglePixelFold: By = By.xpath('//span[text()="Pre-order"]');
+    skipOffer: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 dlAMgf"]');
+    continueBtnNextPhone: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 biMyqs sc-iHGNWf jsCVLy"]');
+    shopSecondPhone: By = By.xpath('//button[@id="handle-shopphones-button"]');
+    pickSecondPlan: By = By.xpath('//button[@id="handle-pickaplan-button"]');
+    selectAppleiPhoneProMax: By = By.xpath('//div[@class="h-[522px] w-full min-[684px]:h-[542px] relative"][2]');
+    continueWith2ndPhone: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 glVjuF w-full"]');
+    continueWithOrderBtn: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 biMyqs sc-iHGNWf jsCVLy"]');
+    continueWithOrderBtn2: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 fgVoVD"]');
+    //pickIphone14Pro: By = By.xpath('//div[@id="MQ0E3LL/A-null"]');
+    pickIphone14Pro: By = By.xpath('//div[@id="Apple iPhone 14 Pro Max-client"]');
+
+    // xpath + 1 for array
+    //continue: By = By.xpath('//div[@id="cta-btn"]');
+    //continue: By = By.xpath('//div[@class="ContinueComponent__Wrapper-sc-26ypzp-0 qZMDL grid grid-cols-1 sm:grid-cols-2  gap-4"]');
+    //continue: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 dCkSrl"][3]');
+    //continue: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 dCkSrl"][4]');
+    //continue: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 dCkSrl"][2]');
+    //continue: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 kdOlMG"][1]');
+    //continue: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 kdOlMG"][0]');
+    //continue: By = By.xpath('//span[text()="Continue"]');
+    //continue: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 glVjuF w-full"]');
+    //continue: By = By.xpath('//button[@*][53]');
+    //continue: By = By.xpath('//button[@*]')[52];
+    continue: By = By.xpath('(//span[@*])[79]');
+    //shopPhones: By = By.xpath('//button[@class="StyledButton-VDS__sc-bc3yhn-2 fgVoVD"]');
+    //shopPhones: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"][1]');
+    //shopPhones: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"][0]');
+    //shopPhones: By = By.xpath('//span[@class="HitArea-VDS__sc-bc3yhn-0 VAWhD"][2]');
+    //shopPhones: By = By.xpath('//span[text()="Shop phones"]');
+    //shopPhones: By = By.xpath('//div[@class="sc-djTQaJ gqgBlJ"][2]');
+    //shopPhones: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 fkFKdk"][2]');
+    shopPhones: By = By.xpath('//span[@class="StyledChildWrapper-VDS__sc-bc3yhn-1 fkFKdk"][1]');
+    iPhone14ProMaxText: By = By.xpath('//a[text()="Play videos"]'); 
+    metaQuestText: By = By.xpath('//a[text()="Play videos"]');
+    buildYourOrderText2: By = By.xpath('//h1[text()="Build your order."]');
+
 
     constructor () {
     super ({url:"https://www.verizon.com"})

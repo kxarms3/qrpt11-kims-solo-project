@@ -61,8 +61,9 @@ export class BasePage {
       }
 
       async scrollDown() {
-        await this.driver.executeScript("window.scrollto(0,250)");
+        //await this.driver.executeScript("window.scrollto(0,250)");
         //await this.driver.executeScript("window.scrollTo(300, 300)");
+        await this.driver.executeScript("window.scrollTo(300, 320)");
       }
 
 
